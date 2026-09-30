@@ -1,0 +1,121 @@
+2026-02-22 16:32:51,189 - INFO - Notebook pipeline started
+2026-02-22 16:34:30,441 - INFO - Raw data loaded successfully
+2026-02-22 16:34:36,416 - INFO - Raw data stored in SQLite database (raw_housing_data table)
+2026-02-22 16:34:39,471 - INFO - Working copy of dataset created
+2026-02-22 16:34:41,861 - INFO - Missing values handled in total_bedrooms. Before: 207, After: 0
+2026-02-22 16:34:44,392 - INFO - Feature engineering completed (3 new features added)
+2026-02-22 16:34:46,532 - INFO - Categorical encoding completed using one-hot encoding
+2026-02-22 16:34:48,900 - INFO - Converted boolean columns to int: ['ocean_proximity_<1H OCEAN', 'ocean_proximity_INLAND', 'ocean_proximity_ISLAND', 'ocean_proximity_NEAR BAY', 'ocean_proximity_NEAR OCEAN']
+2026-02-22 16:34:51,572 - INFO - Starting data validation checks
+2026-02-22 16:34:51,602 - INFO - Data validation passed successfully
+2026-02-22 16:34:56,644 - INFO - Feature scaling completed (target variable excluded)
+2026-02-22 16:35:00,760 - INFO - Processed data stored in SQLite (processed_housing_data table)
+2026-02-22 16:35:03,728 - INFO - Processed CSV exported successfully
+2026-02-22 16:35:07,167 - INFO - Preparing dataset for model training
+2026-02-22 16:35:07,169 - INFO - Feature shape: (20640, 16), Target shape: (20640,)
+2026-02-22 16:35:10,032 - INFO - Performing train-test split
+2026-02-22 16:35:10,052 - INFO - Training shape: (16512, 16), Testing shape: (4128, 16)
+2026-02-22 16:35:13,876 - INFO - Training Linear Regression model
+2026-02-22 16:35:13,888 - INFO - Linear Regression training completed
+2026-02-22 16:35:18,364 - INFO - Evaluating Linear Regression model
+2026-02-22 16:35:18,380 - INFO - Linear Regression - MAE: 50888.66001572011, RMSE: 72668.53837868226, R2: 0.5970176824350761
+2026-02-22 16:35:23,786 - INFO - Training Random Forest Regressor
+2026-02-22 16:35:28,659 - INFO - Random Forest training completed
+2026-02-22 16:35:33,662 - INFO - Evaluating Random Forest model
+2026-02-22 16:35:33,725 - INFO - Random Forest - MAE: 32342.42406492248, RMSE: 50375.25127728276, R2: 0.8063455010315974
+2026-02-22 16:35:38,798 - INFO - Comparing model performances
+2026-02-22 16:35:38,799 - INFO - Model comparison completed
+2026-02-22 16:35:44,321 - INFO - Saving final trained model
+2026-02-22 16:35:44,462 - INFO - Model saved as house_price_model.pkl
+2026-02-22 16:35:54,961 - INFO - Database connection closed. Pipeline completed successfully
+2026-02-22 17:08:12,297 - INFO - Notebook pipeline started
+2026-02-22 17:08:21,612 - INFO - Checking feature order for prediction
+2026-02-22 17:08:34,585 - INFO - Notebook pipeline started
+2026-02-22 17:08:34,693 - INFO - Raw data loaded successfully
+2026-02-22 17:08:34,801 - INFO - Raw data stored in SQLite database (raw_housing_data table)
+2026-02-22 17:08:34,811 - INFO - Working copy of dataset created
+2026-02-22 17:08:34,833 - INFO - Missing values handled in total_bedrooms. Before: 207, After: 0
+2026-02-22 17:08:34,877 - INFO - Feature engineering completed (3 new features added)
+2026-02-22 17:08:34,931 - INFO - Categorical encoding completed using one-hot encoding
+2026-02-22 17:08:34,961 - INFO - Converted boolean columns to int: ['ocean_proximity_<1H OCEAN', 'ocean_proximity_INLAND', 'ocean_proximity_ISLAND', 'ocean_proximity_NEAR BAY', 'ocean_proximity_NEAR OCEAN']
+2026-02-22 17:08:34,980 - INFO - Starting data validation checks
+2026-02-22 17:08:34,994 - INFO - Data validation passed successfully
+2026-02-22 17:08:35,030 - INFO - Feature scaling completed (target variable excluded)
+2026-02-22 17:08:35,118 - INFO - Processed data stored in SQLite (processed_housing_data table)
+2026-02-22 17:08:35,495 - INFO - Processed CSV exported successfully
+2026-02-22 17:08:35,504 - INFO - Preparing dataset for model training
+2026-02-22 17:08:35,506 - INFO - Feature shape: (20640, 16), Target shape: (20640,)
+2026-02-22 17:08:35,517 - INFO - Performing train-test split
+2026-02-22 17:08:35,523 - INFO - Training shape: (16512, 16), Testing shape: (4128, 16)
+2026-02-22 17:08:35,535 - INFO - Training Linear Regression model
+2026-02-22 17:08:35,585 - INFO - Linear Regression training completed
+2026-02-22 17:08:35,595 - INFO - Evaluating Linear Regression model
+2026-02-22 17:08:35,599 - INFO - Linear Regression - MAE: 50888.66001572011, RMSE: 72668.53837868226, R2: 0.5970176824350761
+2026-02-22 17:08:35,628 - INFO - Training Random Forest Regressor
+2026-02-22 17:08:42,422 - INFO - Random Forest training completed
+2026-02-22 17:08:42,432 - INFO - Evaluating Random Forest model
+2026-02-22 17:08:42,493 - INFO - Random Forest - MAE: 32342.42406492248, RMSE: 50375.25127728276, R2: 0.8063455010315974
+2026-02-22 17:08:42,503 - INFO - Comparing model performances
+2026-02-22 17:08:42,504 - INFO - Model comparison completed
+2026-02-22 17:08:42,521 - INFO - Saving final trained model
+2026-02-22 17:08:42,666 - INFO - Model saved as house_price_model.pkl
+2026-02-22 17:08:42,676 - INFO - Database connection closed. Pipeline completed successfully
+2026-02-22 17:08:42,686 - INFO - Checking feature order for prediction
+2026-02-22 17:08:42,701 - INFO - Creating sample input for model prediction
+2026-02-22 17:08:42,703 - INFO - Sample input dataframe created for prediction
+2026-02-22 17:08:42,722 - INFO - Loading saved model for prediction
+2026-02-22 17:08:43,094 - INFO - Model loaded successfully
+2026-02-22 17:08:43,103 - INFO - Starting house price prediction
+2026-02-22 17:08:43,132 - INFO - Prediction completed. Predicted value: 475106.81
+2026-02-22 17:18:08,038 - INFO - Streamlit app started
+2026-02-22 17:18:08,040 - INFO - Loading model and scaler
+2026-02-22 17:26:40,215 - INFO - Scaler saved for FastAPI + Streamlit inference pipeline
+2026-02-22 17:28:01,946 - INFO - FastAPI backend started
+2026-02-22 17:28:03,902 - INFO - Model and scaler loaded successfully
+2026-02-22 17:36:56,225 - INFO - FastAPI backend started
+2026-02-22 17:38:04,978 - INFO - FastAPI backend started
+2026-02-22 17:38:11,542 - INFO - Model and scaler loaded successfully
+2026-02-22 17:39:04,631 - INFO - Streamlit frontend started
+2026-02-22 17:40:00,947 - INFO - Streamlit frontend started
+2026-02-22 17:40:08,833 - INFO - Streamlit frontend started
+2026-02-22 17:40:19,286 - INFO - Streamlit frontend started
+2026-02-22 17:40:27,865 - INFO - Streamlit frontend started
+2026-02-22 17:40:33,955 - INFO - Streamlit frontend started
+2026-02-22 17:40:44,272 - INFO - Streamlit frontend started
+2026-02-22 17:40:52,719 - INFO - Streamlit frontend started
+2026-02-22 17:40:54,535 - INFO - Streamlit frontend started
+2026-02-22 17:41:04,867 - INFO - Streamlit frontend started
+2026-02-22 17:41:17,922 - INFO - Streamlit frontend started
+2026-02-22 17:41:27,271 - INFO - Streamlit frontend started
+2026-02-22 17:41:29,738 - INFO - Streamlit frontend started
+2026-02-22 17:41:29,743 - INFO - Sending raw data to FastAPI backend
+2026-02-22 17:41:29,786 - INFO - Prediction request received from frontend
+2026-02-22 17:41:29,788 - INFO - Starting raw to processed data transformation
+2026-02-22 17:41:29,835 - INFO - Data successfully converted from RAW \u2192 PROCESSED format
+2026-02-22 17:41:29,877 - INFO - Prediction successful: 420041.27
+2026-02-22 17:41:29,879 - INFO - Prediction displayed successfully
+2026-02-22 21:59:16,145 - INFO - FastAPI backend started
+2026-02-22 21:59:18,306 - INFO - Model and scaler loaded successfully
+2026-02-22 21:59:59,260 - INFO - Streamlit frontend started
+2026-02-22 22:00:03,725 - INFO - Streamlit frontend started
+2026-02-22 22:00:03,732 - INFO - Sending raw data to FastAPI backend
+2026-02-22 22:00:03,758 - INFO - Prediction request received from frontend
+2026-02-22 22:00:03,760 - INFO - Starting raw to processed data transformation
+2026-02-22 22:00:03,787 - INFO - Data successfully converted from RAW \u2192 PROCESSED format
+2026-02-22 22:00:03,819 - INFO - Prediction successful: 304826.04
+2026-02-22 22:00:03,821 - INFO - Prediction displayed successfully
+2026-02-22 22:49:20,184 - INFO - Streamlit frontend started
+2026-02-22 23:00:04,355 - INFO - FastAPI backend started
+2026-02-22 23:00:06,499 - INFO - Model and scaler loaded successfully
+2026-02-22 23:01:03,234 - INFO - Streamlit frontend started
+2026-02-22 23:01:13,303 - INFO - Streamlit frontend started
+2026-02-22 23:01:15,457 - INFO - Streamlit frontend started
+2026-02-22 23:01:17,750 - INFO - Streamlit frontend started
+2026-02-22 23:01:17,759 - INFO - Sending raw data to FastAPI backend
+2026-02-22 23:01:17,778 - INFO - Prediction request received from frontend
+2026-02-22 23:01:17,780 - INFO - Starting raw to processed data transformation
+2026-02-22 23:01:17,812 - INFO - Data successfully converted from RAW \u2192 PROCESSED format
+2026-02-22 23:01:17,844 - INFO - Prediction successful: 320588.08
+2026-02-22 23:01:17,846 - INFO - Prediction displayed successfully
+2026-02-22 23:03:20,693 - INFO - FastAPI backend started
+2026-02-22 23:03:27,570 - INFO - Model and scaler loaded successfully
